@@ -13,7 +13,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(8, 36, 77, .96);
+    background: rgba(255, 255, 255, 0.96);
     padding: 16px 0;
     z-index: 999;
     backdrop-filter: blur(6px);
@@ -27,22 +27,23 @@ nav {
     padding: 0 22px;
 }
 .logo {
-    color: #fff;
+    color: #3159b0;
     font-size: 22px;
     font-weight: 600;
 }
 .nav a {
-    color: #fff;
+    color: #545252;
     margin-left: 26px;
     text-decoration: none;
     font-size: 15px;
     transition: .25s;
 }
 .nav a:hover {
-    color: #b6d7ff;
+    color: #102fdb;
+    font-size: 20px;
 }
 .nav a.router-link-active {
-    color: #b6d7ff;
+    color: #850cd6;
 }
 
 /* 首页全屏模块 */

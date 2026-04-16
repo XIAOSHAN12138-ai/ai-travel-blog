@@ -1,5 +1,5 @@
 const { createApp } = Vue;
-const { createRouter, createWebHistory } = VueRouter;
+const { createRouter, createWebHashHistory } = VueRouter;
 
 // 首页组件
 const Home = {
@@ -8,7 +8,8 @@ const Home = {
             <section class="section hero">
                 <div class="fade-up">
                     <h1>心之所向，素履以往</h1>
-                    <p>用脚步丈量世界，用镜头记录温柔。每一次出发，都是与更好的自己相遇。</p>
+                    <p>用脚步丈量世界，</br>用镜头记录温柔。每一次出发，都是与更好的自己相遇。</p>
+                   
                 </div>
             </section>
             <section class="section gallery">
@@ -64,7 +65,7 @@ const Destinations = {
     `
 };
 
-// 京都详情
+// 游记详情
 const Destination = {
     template: `
         <div class="detail">
@@ -139,7 +140,7 @@ const Contact = {
     `
 };
 
-// 路由配置（默认首页）
+// 路由配置
 const routes = [
     { path: '/', component: Home },
     { path: '/destinations', component: Destinations },
@@ -148,10 +149,10 @@ const routes = [
     { path: '/contact', component: Contact }
 ];
 
+
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes
 });
 
-// 创建 Vue 应用
 createApp({}).use(router).mount('#app');
