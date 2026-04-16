@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅途印记 | 个人旅行博客</title>
+    <!-- 引入 Vue + 路由 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.js"></script>
+    <!-- 引入独立 CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <nav>
+            <div class="nav-wrap">
+                <div class="logo">旅途印记</div>
+                <div class="nav">
+                    <router-link to="/">首页</router-link>
+                    <router-link to="/destinations">目的地</router-link>
+                    <router-link to="/destination">京都</router-link>
+                    <router-link to="/about">关于我</router-link>
+                    <router-link to="/contact">联系</router-link>
+                </div>
+            </div>
+        </nav>
+        <router-view></router-view>
+    </div>
+    <!-- 引入独立 Vue 逻辑 -->
+    <script src="app.js"></script>
+</body>
+</html>
